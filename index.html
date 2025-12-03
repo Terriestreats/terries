@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>13-Image Gallery</title>
+    <style>
+        :root{
+            --gap:16px;
+            --max-width:1100px;
+            --bg:#f7f7f8;
+            --card:#ffffff;
+            --accent:#c85a8a;
+        }
+        *{box-sizing:border-box}
+        body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0; background:var(--bg); color:#111}
+        .container{max-width:var(--max-width); margin:32px auto; padding:16px}
+
+        h1{margin:0 0 12px;font-size:1.5rem}
+        p.lead{margin:0 0 20px; color:#444}
+
+        .gallery{display:grid; grid-template-columns: repeat(2, 1fr); gap:var(--gap)}
+        .item.full{grid-column: 1 / -1}
+
+        /* FLIP CARD SETUP */
+        .item{perspective:1000px}
+        .item-inner{
+            position:relative;
+            width:100%;
+            height:320px;
+            transition:transform 0.8s ease;
+            transform-style:preserve-3d;
+        }
+        .item:hover .item-inner{transform:rotateY(180deg)}
+
+        .item-face{
+            position:absolute;
+            inset:0;
+            backface-visibility:hidden;
+            border-radius:8px;
+            overflow:hidden;
+            box-shadow:0 6px 18px rgba(12,20,30,0.06);
+        }
+
+        .item-front img{width:100%; height:100%; object-fit:cover; display:block}
+
+        .item-back{
+            background:var(--accent);
+            transform:rotateY(180deg);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            color:white;
+            font-weight:600;
+            padding:20px;
+            text-align:center;
+        }
+
+        @media(min-width:900px){
+            .item-inner{height:420px}
+        }
+
+        .contact{background:var(--card); border-radius:12px; padding:18px; margin-top:28px; box-shadow:0 8px 24px rgba(12,20,30,0.06); display:flex; flex-direction:column; gap:6px}
+        .contact .title{font-weight:600}
+        .contact .info{color:#444}
+
+        footer{margin-top:18px; font-size:0.85rem; color:#666}
+
+        @media(max-width:640px){
+            .gallery{grid-template-columns:1fr}
+            .item-inner{height:260px}
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="/logo.png" alt="" style="width:80px;margin-bottom:16px">
+    <h1>Terries Treats</h1>
+    <p class="lead">A sweet showcase of Terries Treats — handcrafted delights made with love.</p>
+
+    <div class="gallery">
+
+        <!-- IMAGE 1 -->
+        <div class="item">
+            <div class="item-inner">
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752969/pic6_zlh2lu.jpg"></div>
+                <div class="item-face item-back">Handmade with love ♥</div>
+            </div>
+        </div>
+
+        <!-- IMAGE 2 -->
+        <div class="item">
+            <div class="item-inner">
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic4_f78pme.jpg"></div>
+                <div class="item-face item-back">Freshly made treats</div>
+            </div>
+        </div>
+
+        <!-- IMAGE 3 FULL -->
+        <div class="item full">
+            <div class="item-inner">
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic11_wmmyvq.jpg"></div>
+                <div class="item-face item-back">Perfect for celebrations</div>
+            </div>
+        </div>
+
+        <!-- IMAGE 4 -->
+        <div class="item">
+            <div class="item-inner">
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752974/pic10_bz93va.jpg"></div>
+                <div class="item-face item-back">Custom designs available</div>
+            </div>
+        </div>
+
+        <!-- IMAGE 5 -->
+        <div class="item">
+            <div class="item-inner">
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic5_amduja.jpg"></div>
+                <div class="item-face item-back">Made to order</div>
+            </div>
+        </div>
+
+        <!-- IMAGE 6 FULL -->
+        <div class="item full">
+            <div class="item-inner">
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic5_amduja.jpg"></div>
+                <div class="item-face item-back">Terries Treats</div>
+            </div>
+        </div>
+
+        <!-- IMAGE 7 -->
+        <div class="item">
+            <div class="item-inner">
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic1_zpm0ho.jpg"></div>
+                <div class="item-face item-back">Sweet & delicious</div>
+            </div>
+        </div>
+
+        <!-- IMAGE 8 -->
+        <div class="item">
+            <div class="item-inner">
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752969/pic7_maeqse.jpg"></div>
+                <div class="item-face item-back">Quality ingredients</div>
+            </div>
+        </div>
+
+        <!-- IMAGE 9 FULL -->
+        <div class="item full">
+            <div class="item-inner">
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752975/pic8_xmlt80.jpg"></div>
+                <div class="item-face item-back">Baked with care</div>
+            </div>
+        </div>
+
+        <!-- IMAGE 10 -->
+        <div class="item">
+            <div class="item-inner">
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752974/pic13_gykyuz.jpg"></div>
+                <div class="item-face item-back">Perfect gift idea</div>
+            </div>
+        </div>
+
+        <!-- IMAGE 11 -->
+        <div class="item">
+            <div class="item-inner">
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic2_jyhcbj.jpg"></div>
+                <div class="item-face item-back">Made for you</div>
+            </div>
+        </div>
+
+        <!-- IMAGE 12 FULL -->
+        <div class="item full">
+            <div class="item-inner">
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752969/pic9_jpvk3r.jpg"></div>
+                <div class="item-face item-back">Order today</div>
+            </div>
+        </div>
+
+        <!-- IMAGE 13 FULL -->
+        <div class="item full">
+            <div class="item-inner">
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic11_wmmyvq.jpg"></div>
+                <div class="item-face item-back">Terries Treats ♥</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contact">
+        <div class="title">Contact</div>
+        <div class="info"><strong>Terries</strong></div>
+        <div class="info"><a href="mailto:terriesaaron@gmail.com">terriesaaron@gmail.com</a></div>
+        <div class="info">+27 83 699 2561 | +27 68 246 5557</div>
+        <div class="info">8272-4 Tabalelo Street, Olivenhoutbosch Ext 36, Centurion</div>
+    </div>
+
+    <footer>
+        Images are for display purposes only. Actual products may vary.
+    </footer>
+</div>
+</body>
+</html>
