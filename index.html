@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>13-Image Gallery</title>
+    <title>TERRIES TREATS-Image Gallery</title>
     <style>
         :root{
             --gap:16px;
             --max-width:1100px;
-            --bg:#f7f7f8;
+            --bg:#e5f9ff;
             --card:#ffffff;
-            --accent:#c85a8a;
+            --accent:#ebc51c;
         }
         *{box-sizing:border-box}
         body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0; background:var(--bg); color:#111}
@@ -28,7 +28,7 @@
             position:relative;
             width:100%;
             height:320px;
-            transition:transform 0.8s ease;
+            transition:transform 1.5s ease;
             transform-style:preserve-3d;
         }
         .item:hover .item-inner{transform:rotateY(180deg)}
@@ -73,118 +73,188 @@
     </style>
 </head>
 <body>
-<div class="container">
-    <img src="/logo.png" alt="" style="width:80px;margin-bottom:16px">
-    <h1>Terries Treats</h1>
-    <p class="lead">A sweet showcase of Terries Treats — handcrafted delights made with love.</p>
+     <!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/terriestreats/30min" style="min-width:320px;height:700px;"></div>
 
+<!-- Calendly inline widget end -->
+<div class="container" style="border: #111; 1px solid; padding: 24px; border-radius: 12px; background-color: white;">
+    <img src="/logo.png" alt="" style="width:80px;margin-bottom:16px">
+    <h1>Terrie’s Sip N Savor</h1>
+    <p class="lead">A sweet showcase of Terrie’s Sip N Savor — handcrafted delights made with love.</p>
+<p>Welcome to a year of sweet moments with Terrie’s Sip N Savor! We’re so glad to share our calendar—and our passion—with you. From small-batch ice cream crafted with care to flavors meant to be savored one smile at a time, every day is an invitation to slow down, sip something delightful, and savor a little joy. Thank you for being part of our family—here’s to a year filled with creamy indulgence, happy scoops, and unforgettable treats!</p>
     <div class="gallery">
 
         <!-- IMAGE 1 -->
         <div class="item">
             <div class="item-inner">
-                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752969/pic6_zlh2lu.jpg"></div>
-                <div class="item-face item-back">Handmade with love ♥</div>
+                <div class="item-face item-front"><img src="/cone.png">
+                <p style="color: white; z-index: 1001; position:relative; bottom: 70px; left: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">
+                    Made with the finest ingredients
+                </p></div>
+                
+                 <div class="item-face item-back">
+                <video width="100%" height="100%" style="object-fit: cover; display: block;" autoplay muted loop>
+                <source src="/ice-cream4.mp4" type="video/mp4">
+                </video>
+             <p style="color: white; z-index: 1001; position:relative; bottom: 70px; left: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">
+                Made with the finest ingredients
+            </p></div>
             </div>
         </div>
 
         <!-- IMAGE 2 -->
         <div class="item">
-            <div class="item-inner">
-                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic4_f78pme.jpg"></div>
-                <div class="item-face item-back">Freshly made treats</div>
+             <div class="item-inner">
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic11_wmmyvq.jpg">
+                 <p style="color: white; z-index: 1001; position:relative; bottom: 70px; left: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">
+                    Made with the finest ingredients
+                </p></div>
+                <div class="item-face item-back">
+                <video width="100%" height="100%" style="object-fit: cover; display: block;" autoplay muted loop>
+                <source src="/ice-cream2.mp4" type="video/mp4">
+                </video>
+             <p style="color: white; z-index: 1001; position:relative; bottom: 70px; left: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">
+                Made with the finest ingredients
+            </p></div>
             </div>
         </div>
 
         <!-- IMAGE 3 FULL -->
         <div class="item full">
-            <div class="item-inner">
-                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic11_wmmyvq.jpg"></div>
-                <div class="item-face item-back">Perfect for celebrations</div>
+           
+             <div class="item-inner">
+            <div class="item-face item-front">
+                <video width="100%" height="100%" style="object-fit: cover; display: block;" autoplay muted loop>
+                <source src="/ice-cream.mp4" type="video/mp4">
+                </video>
+             <p style="color: white; z-index: 1001; position:relative; bottom: 70px; left: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">
+                Made with the finest ingredients
+            </p></div>
+         
+            <div class="item-face item-back">
+                <video width="100%" height="100%" style="object-fit: cover; display: block;" autoplay muted loop>
+                <source src="/ice-cream1.mp4" type="video/mp4">
+                </video>
+             <p style="color: white; z-index: 1001; position:relative; bottom: 70px; left: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">
+               Freshly made treats
+            </p></div>
             </div>
         </div>
 
         <!-- IMAGE 4 -->
         <div class="item">
             <div class="item-inner">
-                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752974/pic10_bz93va.jpg"></div>
-                <div class="item-face item-back">Custom designs available</div>
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752974/pic10_bz93va.jpg">
+                 <p style="color: white; z-index: 1001; position:relative; bottom: 70px; left: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">
+                    Made with the finest ingredients
+                </p></div>
+                <div class="item-face item-back">
+                    <img src="/milkshakes.jpg" style="width: auto; height: 100%;"></div>
             </div>
         </div>
 
         <!-- IMAGE 5 -->
         <div class="item">
             <div class="item-inner">
-                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic5_amduja.jpg"></div>
-                <div class="item-face item-back">Made to order</div>
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic5_amduja.jpg">
+                 <p style="color: white; z-index: 1001; position:relative; bottom: 70px; left: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">
+                    Made with the finest ingredients
+                </p></div>
+                <div class="item-face item-back"><img src="/milkshakes.jpg" style="width: auto; height: 100%;"></div>
             </div>
         </div>
 
         <!-- IMAGE 6 FULL -->
         <div class="item full">
             <div class="item-inner">
-                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic5_amduja.jpg"></div>
-                <div class="item-face item-back">Terries Treats</div>
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic5_amduja.jpg">
+                 <p style="color: white; z-index: 1001; position:relative; bottom: 70px; left: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">
+                    Made with the finest ingredients
+                </p></div>
+                <div class="item-face item-back"><img src="/milkshakes.jpg" style="width: auto; height: 100%;"></div>
             </div>
         </div>
 
         <!-- IMAGE 7 -->
         <div class="item">
             <div class="item-inner">
-                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic1_zpm0ho.jpg"></div>
-                <div class="item-face item-back">Sweet & delicious</div>
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic1_zpm0ho.jpg">
+                 <p style="color: white; z-index: 1001; position:relative; bottom: 70px; left: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">
+                    Made with the finest ingredients
+                </p></div>
+                <div class="item-face item-back"><img src="/milkshakes.jpg" style="width: auto; height: 100%;"></div>
             </div>
         </div>
 
         <!-- IMAGE 8 -->
         <div class="item">
             <div class="item-inner">
-                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752969/pic7_maeqse.jpg"></div>
-                <div class="item-face item-back">Quality ingredients</div>
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752969/pic7_maeqse.jpg">
+                 <p style="color: white; z-index: 1001; position:relative; bottom: 70px; left: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">
+                    Made with the finest ingredients
+                </p></div>
+                <div class="item-face item-back"><img src="/milkshakes.jpg" style="width: auto; height: 100%;"></div>
             </div>
         </div>
 
         <!-- IMAGE 9 FULL -->
         <div class="item full">
             <div class="item-inner">
-                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752975/pic8_xmlt80.jpg"></div>
-                <div class="item-face item-back">Baked with care</div>
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752975/pic8_xmlt80.jpg">
+                 <p style="color: white; z-index: 1001; position:relative; bottom: 70px; left: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">
+                    Made with the finest ingredients
+                </p></div>
+                <div class="item-face item-back"><img src="/milkshakes.jpg" style="width: auto; height: 100%;"></div>
             </div>
         </div>
 
         <!-- IMAGE 10 -->
         <div class="item">
             <div class="item-inner">
-                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752974/pic13_gykyuz.jpg"></div>
-                <div class="item-face item-back">Perfect gift idea</div>
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752974/pic13_gykyuz.jpg" style="width: auto;height: 100%;align-content: center;">
+                 <p style="color: white; z-index: 1001; position:relative; bottom: 70px; left: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">
+                    Made with the finest ingredients
+                </p></div>
+                <div class="item-face item-back"><img src="/milkshakes.jpg" style="width: auto; height: 100%;"></div>
             </div>
         </div>
 
         <!-- IMAGE 11 -->
         <div class="item">
             <div class="item-inner">
-                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic2_jyhcbj.jpg"></div>
-                <div class="item-face item-back">Made for you</div>
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic2_jyhcbj.jpg">
+                 <p style="color: white; z-index: 1001; position:relative; bottom: 70px; left: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">
+                    Made with the finest ingredients
+                </p></div>
+                <div class="item-face item-back"><img src="/milkshakes.jpg" style="width: auto; height: 100%;"></div>
             </div>
         </div>
 
         <!-- IMAGE 12 FULL -->
         <div class="item full">
             <div class="item-inner">
-                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752969/pic9_jpvk3r.jpg"></div>
-                <div class="item-face item-back">Order today</div>
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752969/pic9_jpvk3r.jpg">
+                 <p style="color: white; z-index: 1001; position:relative; bottom: 70px; left: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">
+                    Made with the finest ingredients
+                </p></div>
+                <div class="item-face item-back"><img src="/milkshakes.jpg" style="width: auto; height: 100%;"></div>
             </div>
         </div>
 
         <!-- IMAGE 13 FULL -->
         <div class="item full">
             <div class="item-inner">
-                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic11_wmmyvq.jpg"></div>
-                <div class="item-face item-back">Terries Treats ♥</div>
+                <div class="item-face item-front"><img src="https://res.cloudinary.com/dlrdkvxiz/image/upload/v1764752970/pic11_wmmyvq.jpg">
+                 <p style="color: white; z-index: 1001; position:relative; bottom: 70px; left: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">
+                    Made with the finest ingredients
+                </p></div>
+                <div class="item-face item-back"><img src="/milkshakes.jpg" style="width: auto; height: 100%;"></div>
             </div>
         </div>
 
     </div>
+  
+
 
     <div class="contact">
         <div class="title">Contact</div>
@@ -198,5 +268,7 @@
         Images are for display purposes only. Actual products may vary.
     </footer>
 </div>
+
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>
